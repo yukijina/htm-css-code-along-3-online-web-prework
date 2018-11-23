@@ -1,0 +1,58 @@
+/* Googld font, shoud add on top of css file */
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+/* font-family: 'Clicker Script', cursive; */
+
+/* CSS Syntax:
+selector {
+  property: value;
+  property: value;
+}
+ */
+
+ /* Type selector */
+p {
+  font-size: 16px;  /*?pt, 100%(relative amount), 1em(1em is default 16px) */
+  line-height: 1.5em;
+}
+
+figcaption {
+  /* font-weight - font-size - font-weight - font-family */
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+  color: #777;
+  text-align: right;
+}
+
+/* Class selector (applied to as many elements as you like) */
+.milk-text {
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000; /*vertica horizontal blur color */
+}
+
+/* ID selector */
+#logo {
+  background-color: aqua;
+}
+
+/* Descendent selector */
+#logo h1 {
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Psuedo Selector */
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+#details a:active {
+  color: red;
+}
